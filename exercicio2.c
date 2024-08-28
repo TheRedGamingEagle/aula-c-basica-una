@@ -2,16 +2,15 @@
 
 int main()
 {
-    int x = 10;
+    int num;
+    int answ;
+    printf("Digite um número: ");
+    scanf("%d", &num);
 
-    if (x > 5)
+    for (int i = 1; i <= num; i++)
     {
-        printf("x é maior que 5\n");
-    }
-    else
-    {
-        printf("x é menor ou igual a 5\n");
+        answ += i;
     }
 
-    return 0;
+    printf("Soma = %d\n", answ);
 }
