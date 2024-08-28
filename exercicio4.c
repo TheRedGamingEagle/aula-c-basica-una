@@ -2,18 +2,13 @@
 
 int main() {
 
-    int opcao = 2;
-    
-    switch (opcao) {
-        case 1:
-            printf("Opção 1 selecionada\n");
-            break;
-        case 2:
-            printf("Opção 2 selecionada\n");
-            break;
-        default:
-            printf("Opção inválida\n");
-            break;
+    int num;
+    printf("Fala o numero ai man: ");
+    scanf("%d", &num);
+
+    for (int i = 0; i <= 10; i++)
+    {
+        printf("%d X %d = %d\n", i, num, i * num);
     }
 
     return 0;
